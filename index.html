@@ -1,68 +1,151 @@
 <!DOCTYPE html>
 <html>
+<title>Fill Yer Gut Up</title>
 <head>
-  <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
-<title>The Communist Christmas Conspiracy</title>
-<style>
-body {text-align: center; font-family:'Russo+One', cursive; font-size: 100%;}
-h1 {
-  font-family: 'Creepster', cursive;
-  font-size:700%;
-  <!-- I can't get this background image to work -->
-  background-image: img src= 'soviet_flag.jpg';
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  <script src="https://kit.fontawesome.com/c14c8a2dbe.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  * {
+  box-sizing: border-box;
+  }
+  img {
+    max-width: 75%;
+    height: auto;
+  }
+  .navbar {
+  width: 100%;
+  background-color: #fdb813;
+  overflow: auto;
 }
-h2 {color: red; font-size:400%; font-family: 'Creepster', cursive;}
-p {font-size: 200%;}
-ul {font-size: 250%;}
-a {color: red}
-a:hover {
-  color:powderblue
 
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
 }
+
+.navbar a:hover {
+  background-color: #33b5e5;
+}
+
+.active {
+  background-color: #003468;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+[class*="col-"] {
+  float: left;
+  text-align: center;
+    padding: 15px;
+  }
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+* {
+  font-family:'Nunito', sans-serif;
+}
+
+.header {
+  text-align: center;
+  background-color: #003468;
+  color: #fdb813;
+  padding: 15px;
+}
+
+.body {  text-align: center;
+  background-color: #fdb813;;
+  color: #282ca6;
+  padding: 15px;}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color :#33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.item1 {
+  grid-column: 3 / 8;
+}
+
 </style>
-
 </head>
-
 <body>
+  <div class="navbar">
+    <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+    <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+  </div>
+<div class="header">
+  <h1>Cooking With KD</h1>
+</div>
 
-<body style="background-color:#fff899;">
+<div class="body">
+  <p>What can you do when you don't have enough for Uber Eats?<br><br>Starve?<br><br>No!<br><br> Make Kraft Dinner!</p>
+</div>
 
-<h1 style="font-size:700%;">
-<h1>The Communist <br>Christmas Conspiracy</h1>
-<hr>
-<p>The Soviet Revolution was completed in 1923.<br><br>  One year later Macy's introduced their Santa Claus to the public. <br><br> Coincidence?<br><br>
-   Impossible!</p>
-   <hr>
-<h2 style="font-size:400%;">
-<h2>Santa Claus <mark>is</mark> Karl Marx!</h2>
-<img src="Santa_Marx.jpg" width="400" height="100%">
-<br>
-<p>Yes my friends, as sure as the Earth is flat, Santa Claus is none other than Karl Marx.
-  <br><br> Like Elvis, his death was staged to avoid suspicions concerning his unholy immortality!
-  <br><br>In case you are still skeptical, consider these similarities proof!</p>
-  <ul>
-    <li>Favourite colour is <b>red</b></li>
-    <li>White beard</li>
-    <li>Internationalist</li>
+<div class="row">
+  <div class="col-2 menu">
+    <ul>
+      <li>With Hot Dogs</li>
+      <li>With Tuna</li>
+      <li>With Baked Beans</li>
+      <li>With Spam</li>
+      <li>With Bologna</li>
+      <li>With Cheerios</li>
+      <li>With Bananas</li>
+    </ul>
+  </div>
 
-  </ul>
 
-  <p>This recently discovered
-<a href="https://canadiandimension.com/articles/view/dialectics-of-santa-claus-by-karl-marx">analysis</a> of the myth of Santa Claus by Marx is the obvious
-start of this conspiracy.<br><br>
-Marx, recognizing the appeal of the character, decided to co-opt this great symbol of capitalism.  Founding a <i>Communist</i> utopia in Siberia where the Elves
-controlled the means of production, he set to work polluting the minds of children with insidious propaganda.  Children taught they do not
- have to toil in sweatshops to aquire toys and sweets grew into adults founding labour movements and engaging in horrifying collective action such as general
- strikes.
- <br><br>
-Furthermore, he used coal, a symbol of the strike breaking owners practiced against coal miners, to punish the bourgousie.</p>
-  <span style='font-size:200px;'>&#127877;</span>
+  <div class="col-10"><h2>Classic KD</h2>
+    <p>Boil 6-cups water. Cook 6 to 8 minutes. <br>until tender, stirring occasionally.<br><br>Drain;  Return to saucepan. <br><br> Add 1 Tbsp. non hydrogenated margarine, 1/3 cup<br> skim milk and the cheese sauce mix <br><br> Mix well <br><br>Hoover up that hot mess!<br><br> </p>
+  <img src="image/KD.jpg" alt="image/Santa_Marx.jpg" width="400" height="auto">
+ </div>
+
 </body>
 </html>
